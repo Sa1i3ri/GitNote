@@ -555,7 +555,7 @@ Untracked files:
 
 
 
-#### 6. 移动文件(git rm [file_name] [file_name])
+#### 6. 移动文件(git mv [file_name] [file_name])
 
 Git 并不显式跟踪文件移动操作。 如果在 Git 中重命名了某个文件，仓库中存储的元数据并不会体现出这是一次改名操作。 不过 Git 非常聪明，它会推断出究竟发生了什么。
 
@@ -1380,7 +1380,7 @@ Switched to a new branch 'serverfix'
 
 当然，如果要设置不一样的名字，那只能用`$ git checkout -b [branch] [remote]/[branch]`设置。
 
- 你可以在任意时间使用 `-u` 或 `--set-upstream-to` 选项运行 `git branch` 来显式地设置。（比如github在帮你初始化本地仓库的时候就会推荐你运行`git push -u [branch] [remote]/[branch]`
+ 你可以在任意时间使用 `-u` 或 `--set-upstream-to` 选项运行 `git branch` 来显式地设置。（比如github在帮你初始化本地仓库的时候就会推荐你运行`git push -u [remote] [branch]`
 
 ```console
 $ git branch -u origin/serverfix
